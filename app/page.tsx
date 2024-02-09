@@ -1,16 +1,23 @@
 import React from "react";
 import Image from "next/image";
-import i2 from "../app/images/i2.jpg";
 import { Card, CardHeader, CardBody, Button } from "@nextui-org/react";
+
+import i2 from "../app/images/i2.jpg";
 import vraiepizza from "../app/img/vraiepizza.jpeg";
-import "./globals.css";
 import Header from "./components/Shop/Header";
 import Produit from "./components/Shop/Produit";
 
+import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 export default function page() {
+  const handleClick = () => {
+    // setIsClicked(true);
+    alert("ok!");
+  };
   return (
     <div>
-      <div className="img">
+      <div className="img clickable">
         <Image
           src={i2}
           style={{
@@ -25,7 +32,7 @@ export default function page() {
       </div>
       <Header />
 
-      <div className="containers ">
+      <div>
         <div className="row" style={{ width: "" }}>
           <Produit />
         </div>
