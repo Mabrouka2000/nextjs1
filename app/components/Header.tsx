@@ -4,8 +4,11 @@ import i1 from "../images/i1.png"; // Import de l'image i2
 
 const Header = () => {
   return (
-    <div className="header bg-body-tertiary">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary ">
+    <div
+      // className="header bg-body-tertiary"
+      style={{ backgroundColor: "white !important" }}
+    >
+      <nav>
         <div className="container">
           <div className="logo">
             <Image

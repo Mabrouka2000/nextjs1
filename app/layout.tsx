@@ -15,11 +15,12 @@ export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        <div style={{ backgroundColor: "red !important" }}>
+          <Header />
+        </div>
         <main className="Container">{children}</main>
         {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> */}
-
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
