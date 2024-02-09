@@ -7,6 +7,11 @@
   padding-bottom: 5%;
 }
 
+.custom-font-size {
+  font-size: 15px;
+  text-align: left;
+}
+
 
 
 .text{
@@ -15,6 +20,9 @@
   padding-top: 5%;
   padding-bottom: 5%;
   
+
+/* custom.css */
+
 
 
 }
