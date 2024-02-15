@@ -1,7 +1,7 @@
 import React from "react";
 
 function page() {
-  return <div>Pizza time Guyancourt</div>;
+  return <div>hello gay</div>;
 }
 
 export default page;
