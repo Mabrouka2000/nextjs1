@@ -1,6 +1,6 @@
 import React from "react";
 
-function pg() {
+function pg({ title }: any) {
   return <div>hello world</div>;
 }
 

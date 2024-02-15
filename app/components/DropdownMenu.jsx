@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-
-import { IoMdNotificationsOutline } from "react-icons/io";
-import { IoIosHelpCircleOutline } from "react-icons/io";
+"use client";
+import React from "react";
+import { useState } from "react";
 import { CiLogout } from "react-icons/ci";
-import { CiSettings } from "react-icons/ci";
-import { RiEditBoxLine } from "react-icons/ri";
-import { CgProfile } from "react-icons/cg";
+import { CgMail } from "react-icons/cg";
+import { RiLockPasswordFill } from "react-icons/ri";
 
-function DropdownMenu() {
-  // Correction : Utilisation correcte de useState
+import "./dropdown.css";
+function DropDownMenu() {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -21,7 +19,7 @@ function DropdownMenu() {
         <div className="imgBx">
           <img src="/img/user2.jpg" alt="user" />
         </div>
-        <p className="username">Jully smith</p>
+        <p className="username"></p>
       </div>
       <div className="menuToggle" onClick={handleClick}>
         <span></span>
@@ -30,31 +28,34 @@ function DropdownMenu() {
       </div>
       <ul className="menu">
         <li>
-          <a href="/">
-            <CgProfile />
-            My profile
-          </a>
+          <p>
+            <CgMail /> E-mail
+            <input
+              className="input"
+              placeholder="Saisssez votre e-mail"
+            ></input>
+          </p>
         </li>
         <li>
-          <a href="/">
-            <RiEditBoxLine /> Edit
-          </a>
+          <p>
+            <RiLockPasswordFill /> Mot de passe
+            <input
+              className="input"
+              placeholder="Saisssez votre mot de passe"
+            ></input>
+          </p>
         </li>
-        <li>
-          <a href="/">
-            <IoMdNotificationsOutline /> Notifications
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <CiSettings /> Settings
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <IoIosHelpCircleOutline /> Help & support
-          </a>
-        </li>
+        <button>
+          Connexion
+          <div className="arrow-wrapper">
+            <div className="arrow"></div>
+          </div>
+        </button>
+        <div>
+          {" "}
+          <p className="text">ou</p>
+          <a href="">Inscription</a>
+        </div>
         <li>
           <a href="/">
             <CiLogout /> Logout
@@ -65,4 +66,4 @@ function DropdownMenu() {
   );
 }
 
-export default DropdownMenu;
+export default DropDownMenu;

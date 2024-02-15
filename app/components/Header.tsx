@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import i1 from "../images/i1.png"; // Import de l'image i2
+import i1 from "../images/i1.png";
+import dynamic from "next/dynamic";
+
+const DropDownMenu = dynamic(() => import("./DropDownMenu"), { ssr: false }); // Render DropDownMenu on the client side only// Import de l'image i2
 
 const Header = () => {
   return (
@@ -19,6 +22,7 @@ const Header = () => {
             />
           </div>
         </div>
+        <DropDownMenu />
       </nav>
     </div>
   );

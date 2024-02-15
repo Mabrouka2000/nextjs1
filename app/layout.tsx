@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Footer from "./footer";
+
 import { Inter } from "next/font/google";
 
 import Header from "./components/Header";
-import { products } from "@/public/Clients/products";
+// import DropdownMenu from "./components/DropdownMenu";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -15,9 +18,9 @@ export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div style={{ backgroundColor: "red !important" }}>
-          <Header />
-        </div>
+        {/* <div style={{ backgroundColor: "red !important" }}> */}
+        <Header />
+        {/* </div> */}
         <main className="Container">{children}</main>
         {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> */}
@@ -27,6 +30,10 @@ export default function RootLayout({ children }: any) {
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
           crossOrigin="anonymous"
         ></link>
+        <br />
+        <br />
+        <br />
+        <Footer />
       </body>
     </html>
   );

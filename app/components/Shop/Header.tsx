@@ -1,5 +1,6 @@
 import { Button } from "@nextui-org/react";
 import React from "react";
+
 function Header() {
   return (
     <div className="row">
@@ -15,9 +16,9 @@ function Header() {
           <div className="p-2">
             <div style={{ width: "315px" }}>
               <input
-                style={{ width: "330px" }}
-                type="Saisissez votre adresse, code postal ou ville "
-                placeholder="Saisissez votre adresse, code postal ou ville "
+                style={{ width: "330px", height: "34px" }}
+                type="text"
+                placeholder="Saisissez votre adresse, code postal ou ville"
               />
             </div>
           </div>
