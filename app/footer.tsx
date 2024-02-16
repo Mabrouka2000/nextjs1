@@ -11,56 +11,59 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-column">
-          <h4>telecharger notre application </h4>
+        <div className="">
+          <br />
+          <h5 style={{ marginLeft: "61px" }}>Télécharger notre application</h5>
+          <br />
           <div>
             <ul className="social-icon">
               <ul>
-                <li>
-                  <a href="#">
-                    <img
-                      src="https://p7.hiclipart.com/preview/368/574/541/iphone-app-store-google-play-android-download-now-button.jpg"
-                      alt="Google Play Store"
-                      height="35px"
-                      width="35px"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOrYLGaUvRRbc5zOWZY2azjYcPGk6MN5js9Q&usqp=CAU"
-                      alt="play Store"
-                    />
-                  </a>
-                </li>
+                <a href="https://play.google.com/store/apps/details?id=com.softavera.pizzatime&hl=ln">
+                  <img
+                    src="https://www.commande-pizzatime.fr/CESARWEB_WEB/play_store-icon.png"
+                    alt="play Store"
+                    width="237px"
+                    height="82px"
+                  />
+                </a>
+                <br />
+                <br />
+                <a href="https://apps.apple.com/us/app/pizza-time-france/id1556496063">
+                  <img
+                    src="https://www.commande-pizzatime.fr/CESARWEB_WEB/app_store_icon.png"
+                    alt="Google Play Store"
+                    width="237px"
+                    height="82px"
+                  />
+                </a>
               </ul>
             </ul>
           </div>
         </div>
-        <div>
+
+        <div className="footer-links">
           <ul>
-            <li>
-              <a href="#">Mentions légales</a>
-            </li>
-            <li>
-              <a href="#">Politique de confidentialité</a>
-            </li>
-            <li>
-              <a href="#">CGV</a>
-            </li>
-            <li>
-              <a href="#">CGU</a>
-            </li>
+            <br />
+            <br />
+            <a>Mentions légales</a>
+            <br />
+
+            <a>Politique de confidentialité</a>
+            <br />
+
+            <a>CGV</a>
+            <br />
+
+            <a>CGU</a>
           </ul>
         </div>
 
         <div className="footer-column">
-          <h4>Réseaux sociaux</h4>
+          <h4>Suivez-nous</h4>
           <div>
             <ul className="social-icons">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/PizzaTimeFrance/">
                   <FontAwesomeIcon
                     icon={faFacebook}
                     height="35px"
@@ -69,18 +72,9 @@ function Footer() {
                   />
                 </a>
               </li>
+
               <li>
-                <a href="#">
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    height="40px"
-                    width="41px"
-                    className="icon twitter-icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
+                <a href="https://www.instagram.com/pizzatimefrance/">
                   <FontAwesomeIcon
                     icon={faInstagram}
                     height="35px"
@@ -94,7 +88,15 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy;Tous droits réservés - ® 2024 V 3.1 </p>
+        <p style={{ marginLeft: "185px" }}>
+          Tous droits réservés - ® 2024 V 3.1{" "}
+        </p>
+        <p style={{ marginLeft: "185px" }}>
+          Softavera N°1 des solutions d encaissement, caisse tactile, borne de
+          commande, click & collect, site web commande en ligne..., plus d’infos
+          :{""}
+          <a href="https://softavera.fr/">www.softavera.fr</a>
+        </p>
       </div>
     </footer>
   );

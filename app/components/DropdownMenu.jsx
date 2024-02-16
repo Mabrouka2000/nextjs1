@@ -1,4 +1,4 @@
-"use client";
+"use Client";
 import React from "react";
 import { useState } from "react";
 import { CiLogout } from "react-icons/ci";
