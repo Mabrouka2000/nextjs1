@@ -7,6 +7,7 @@ import Pagem from "../../Imagenav/Page";
 import "./guyancourt.css";
 import Modal from "@/app/pages/Modal";
 import Image from "next/image";
+import "@/app/pages/modal.css";
 
 export default function Page() {
   const [showModal, setShowModal] = useState(false);
@@ -59,7 +60,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="modal1">
         {" "}
         <ul>
           {menuItems.map((menuItem: any) => (
@@ -68,36 +69,7 @@ export default function Page() {
               {menuItem.title}
             </li>
           ))}
-          <div className="modal">
-            <div className="modal-dialog">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title">Modal title</h5>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div className="modal-body">
-                  <p>Modal body text goes here.</p>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" className="btn btn-primary">
-                    Save changes
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+
           {/**  <select className="max-w-xs nav-link"> 
                 {menuItems.map((menuItem:any) => (
                     <option key={menuItem} value={menuItem.title1}> {menuItem.title1}</option>    
@@ -125,7 +97,13 @@ export default function Page() {
               <span className="btn-txt">Commander</span>
             </button>
             {showModal ? (
-              <Modal setShowModal={setShowModal} showModal={showModal} />
+              <>
+                <div
+                  className="modal-background"
+                  onClick={() => setShowModal(false)}
+                />
+                <Modal setShowModal={setShowModal} showModal={showModal} />
+              </>
             ) : null}
           </div>
         ))}

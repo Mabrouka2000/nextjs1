@@ -15,7 +15,7 @@ const Modal = ({ showModal, setShowModal }: any) => {
   };
 
   return (
-    <div className="modal1">
+    <div className="">
       {/* <button onClick={toggleModal} className="button type1" type="button">
         <span className="btn-txt">Commander</span>
       </button> */}
@@ -84,7 +84,6 @@ const Modal = ({ showModal, setShowModal }: any) => {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
         }
 
         .modal-content {
