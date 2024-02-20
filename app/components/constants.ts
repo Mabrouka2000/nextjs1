@@ -7431,12 +7431,176 @@ export const card = {
             "Nature": "boutique",
             "shopid": 2,
             "Address": "2 PL CHARLOTTE PERRIAND ",
-            "Company": "Pizza time Guyancourt",
+            "Company": "Pizza Time Guyancourt",
             "Country": "FRANCE",
             "PostalCode": "78280",
-            "Responsible": ""
-        }
-        ,
+            "Responsible": "",
+            "openingTime1": "11:00",
+            "closingTime1": " 13:30",
+            "openingTime2": "18:00",
+            "closingTime2": " 23:00",
+            "produit": ["Junior", "senior", "mega", "biggy slice", "salades", "tex mex", "paninis", "menus", "offres"],
+            "autreproduit": ["offres pizza en livrison", "desserts", " boissons", " cafe"],
+            "menu1": {
+                "1": {
+                    "id": "6bf56de4-7ed2-4ece-b45b-5001b52a99bab",
+                    "title": "Junior",
+                    "shortDescr": "smoked cherries dumpling  with a delicate texture",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 104,
+                    "image": "/images/guyancourt/famille49.jpg",
+                    "category": "breakfast",
+                    "prepType": ["well-done", "medium"],
+                    "quantity": 2,
+                },
+                "2": {
+                    "id": "e08155e0-8708-47c3-8234-09b30f147f64",
+                    "title": "senior",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    " price": 71,
+                    "image": "/images/guyancourt/famille50.jpg",
+                    " category": "meals",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "3": {
+                    "id": "df239466-5617-4f59-9adf-2478202ef94f",
+                    "title": "Mega",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 41,
+                    "image": "/images/guyancourt/famille51.jpg",
+                    "category": "beverages",
+                    "quantity": 2,
+                    " prepType": ["well-done", "medium"],
+                },
+                "4": {
+                    "id": "ed3b3942-5ba2-4b33-b908-b768abbe086b",
+                    "title": "Big slice",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 39,
+                    "image": "/images/guyancourt/famille52.jpg",
+                    "category": "meat",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "5": {
+                    "id": "95ede0b1-f57f-4e6e-9181-be8ee5f40be3",
+                    "title": "salades",
+                    "shortDescr": "smoked cherries dumpling  with a delicate texture",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 110,
+                    "image": "/images/guyancourt/famille53.jpg",
+                    "category": "bbq",
+                    "quantity": 2,
+
+                    "prepType": ["well-done", "medium"],
+                },
+                "6": {
+                    "id": "8e386904-6b1f-47e8-ba3a-56f0cb115d1c",
+                    "title": "tex mex",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 35,
+                    "image": "/images/guyancourt/famille54.jpg",
+                    "category": "breakfast",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "7": {
+                    "id": "f674e9c9-6ae1-43fd-a1ce-1828cd64ae59",
+                    "title": "paninis ",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 113,
+                    "image": "/images/guyancourt/famille55.jpg",
+                    "category": "meals",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "8": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b921",
+                    "title": "menus",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille56.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "9": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b922",
+                    "title": "offres",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille57.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "10": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b923",
+                    "title1": "offres pizza en livraison",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille58.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "11": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b924",
+                    "title": "desserts",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille59.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "12": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b925",
+                    "title": "boissons",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille60.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "13": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b926",
+                    "title": "cafe",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille61.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+            },
+        },
 
         "8502b411-a195-4c6d-a3af-b92619097279": {
             "town": "MEAUX",
@@ -7444,22 +7608,180 @@ export const card = {
             "Nature": "boutique",
             "shopid": 3,
             "Address": "9 RUE TIME CORNILLON",
-            "Company": "Pizza time MEAUX",
+            "Company": "Pizza Time Meaux",
             "Country": "FRANCE",
             "PostalCode": "77100 ",
-            "Responsible": ""
+            "Responsible": "",
+            "openingTime": "",
+            "closingTime": "",
+            // "produit":[ "offres" ,"Junior",  "senior" , "mega" , "biggy slice" , "salades" , "tex mex", ,"menus"],
+            // "autreproduit":[  "offres pizza en livrison" ,"paninis", "desserts"," boissons"] ,
+            "menu1": {
+                "1": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b922",
+                    "title": "offres",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille57.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "2": {
+                    "id": "6bf56de4-7ed2-4ece-b45b-5001b52a99bab",
+                    "title": "Junior",
+                    "shortDescr": "smoked cherries dumpling  with a delicate texture",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 104,
+                    "image": "/images/guyancourt/famille49.jpg",
+                    "category": "breakfast",
+                    "prepType": ["well-done", "medium"],
+                    "quantity": 2,
+                },
+                "3": {
+                    "id": "e08155e0-8708-47c3-8234-09b30f147f64",
+                    "title": "senior",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    " price": 71,
+                    "image": "/images/guyancourt/famille50.jpg",
+                    " category": "meals",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "4": {
+                    "id": "df239466-5617-4f59-9adf-2478202ef94f",
+                    "title": "Mega",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 41,
+                    "image": "/images/guyancourt/famille51.jpg",
+                    "category": "beverages",
+                    "quantity": 2,
+                    " prepType": ["well-done", "medium"],
+                },
+                "5": {
+                    "id": "ed3b3942-5ba2-4b33-b908-b768abbe086b",
+                    "title": "Big slice",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 39,
+                    "image": "/images/guyancourt/famille52.jpg",
+                    "category": "meat",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "6": {
+                    "id": "95ede0b1-f57f-4e6e-9181-be8ee5f40be3",
+                    "title": "salades",
+                    "shortDescr": "smoked cherries dumpling  with a delicate texture",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 110,
+                    "image": "/images/guyancourt/famille53.jpg",
+                    "category": "bbq",
+                    "quantity": 2,
+
+                    "prepType": ["well-done", "medium"],
+                },
+                "7": {
+                    "id": "8e386904-6b1f-47e8-ba3a-56f0cb115d1c",
+                    "title": "tex mex",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 35,
+                    "image": "/images/guyancourt/famille54.jpg",
+                    "category": "breakfast",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "8": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b921",
+                    "title": "menus",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille56.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "9": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b923",
+                    "title": "offres pizza en livraison",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille58.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+
+                "10": {
+                    "id": "f674e9c9-6ae1-43fd-a1ce-1828cd64ae59",
+                    "title": "paninis ",
+                    "shortDescr": "chickpeas with sumac and has lemon balm",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 113,
+                    "image": "/images/guyancourt/famille55.jpg",
+                    "category": "meals",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+
+
+                "11": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b924",
+                    "title": "desserts",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille59.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+                "12": {
+                    "id": "989040c0-95bb-4a1b-a5ad-42653124b925",
+                    "title": "boissons",
+                    "shortDescr": "wheat with myrtle plant and has a dash of calamint.",
+                    "longDescr":
+                        "marinated oats quesadilla is a little greasy with a tough texture. It has subtle hints of wheat with myrtle plant and has a dash of calamint",
+                    "price": 56,
+                    "image": "/images/guyancourt/famille60.jpg",
+                    "category": "drinks",
+                    "quantity": 2,
+                    "prepType": ["well-done", "medium"],
+                },
+            },
 
         },
-        "8502b411-a195-4c6d-a3af-b92619097271": {
-            "town": "AMINENS",
+        "8502b411 -a195-4c6d-a3af-b92619097271": {
+            "town": "AMIENS",
             "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/8/PromoWeb.png",
             "Nature": "boutique",
             "shopid": 4,
             "Address": "6 RUE LATTRE DE TASSIGNY",
-            "Company": "PIZZA TIME AMINES CENTRE VILLE",
+            "Company": "Pizza Time Amiens Centre Ville",
             "Country": "FRANCE",
             "PostalCode": "80000",
-            "Responsible": ""
+            "Responsible": "",
+            "openingTime1": "18:00",
+            "closingTime1": "22:30",
+            "produit": ["offres", "Junior", "senior", "mega", "biggy slice", "paninis", "pates", "salades", "tex mex", "menus"],
+            "autreproduit": ["1 achettee = 1 offrte ", "desserts", " boissons"]
 
         },
         "8502b411-a195-4c6d-a3af-b92619097273": {
@@ -7468,10 +7790,14 @@ export const card = {
             "Nature": "boutique",
             "shopid": 5,
             "Address": "24 B RUE LEONARD DE VINCI",
-            "Company": "PIZZA TIME AMIENS SAINT-LEU",
+            "Company": "Pizza Time Amiens Saint-Leu",
             "Country": "FRANCE",
             "PostalCode": "80000",
-            "Responsible": ""
+            "Responsible": "",
+            "openingTime": "",
+            "closingTime": "",
+            "produit": ["offres", "1 achettee = 1 offrte ", "Junior", "senior", "mega", "biggy slice", "paninis", "pasta", "salades"],
+            "autreproduit": ["tex mex", "menus", "milkshakes", "desserts", " boissons"]
 
         }
     },
@@ -9443,4 +9769,3 @@ export const card = {
     "isReferenceAutomatic": false
 
 }
-

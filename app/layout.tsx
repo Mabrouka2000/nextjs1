@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Footer from "./footer";
+import Footer from "@/app/pages/footer/footer";
 
 import { Inter } from "next/font/google";
 
