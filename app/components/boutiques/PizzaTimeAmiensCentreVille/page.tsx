@@ -3,18 +3,19 @@
 // import Icons from '../../icons/Icons';
 // import Page from '../../Imagenav/Page';
 
+
 // export default function page() {
   
-//   const companyIndexToShow = 1; 
+//   const companyIndexToShow = 2; 
 //   if (companyIndexToShow < 0 || companyIndexToShow >= Object.values(card.shoplist).length) {
-//     return <p>Index d'entreprise invalide</p>;
+//     return <p>Index d entreprise invalide</p>;
 //   }
 
 //   const companyToShow = Object.values(card.shoplist)[companyIndexToShow];
 
 //   return (<>
 //     <div className='img' style={{ position: 'relative' }}> 
-//      <Page/>
+//       <Page/>
 //       <div className="containers" style={{
 //         position: 'absolute',
 //         top: '50%',
@@ -29,15 +30,14 @@
 //       }}>
 //         <div>
 //           <p>{`${companyToShow.Company.replace(/\s/g, "")}`}  </p>
-//           <p>fermé</p>
+//           <p>ouvert de {companyToShow.openingTime1} à {companyToShow.closingTime1} </p>
 //           <p>
 //             {" "}
 //             {companyToShow.Address},{companyToShow.PostalCode} {companyToShow.town}   
 //           </p>
 //           <a href=''>Informations utiles</a>
 //             <div></div>
-//         <Icons />
-        
+//          <Icons/>
 //         </div>
 //       </div>
 //     </div>   
@@ -46,7 +46,7 @@
 //         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 //           <span className="navbar-toggler-icon"></span>
 //         </button>
-//         {/* <div className="collapse navbar-collapse" id="navbarNavDropdown">
+//         <div className="collapse navbar-collapse" id="navbarNavDropdown">
 //           <ul className="navbar-nav">
 //             <li className="nav-item">
 //               <a className="nav-link" href="#">{companyToShow.produit}</a>
@@ -58,8 +58,10 @@
                  
 //                 </select>
 //           </ul>
-//         </div> */}
+//         </div>
 //       </nav>
 //     </div>
-//     </>  );
+
+
+//   </>);
 // }

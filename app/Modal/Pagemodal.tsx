@@ -4,7 +4,9 @@ import panierrepas from "@/public/icons/panierrepas.png";
 import { useState } from "react";
 import "@/app/pages/modal.css";
 import { Button } from "@nextui-org/react";
-const Modal = ({ showModal, setShowModal }: any) => {
+const Pagemodal = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const toggleModal = () => {
     setShowModal(!showModal);
   };
@@ -16,8 +18,8 @@ const Modal = ({ showModal, setShowModal }: any) => {
 
   return (
     <div className="modal1">
-      {/* <button onClick={toggleModal} className="button type1" type="button">
-        <span className="btn-txt">Commander</span>
+      {/* <button onClick={toggleModal} className="button type1" type="button"> */}
+      {/* <span className="btn-txt">Commander</span>
       </button> */}
       {showModal && (
         <div className="modal">
@@ -108,4 +110,4 @@ const Modal = ({ showModal, setShowModal }: any) => {
   );
 };
 
-export default Modal;
+export default Pagemodal;

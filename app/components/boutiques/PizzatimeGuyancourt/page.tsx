@@ -1,12 +1,16 @@
 "use client";
 import React from "react";
-import { card } from "../../constants";
-import Page from "@/app/components/Imagenav/Page";
+import { useState } from "react";
+import { card } from "../../../components/constants";
+import Icons from "@/app/components/icons/Icons";
+import Pagem from "../../Imagenav/Page";
 import "./guyancourt.css";
+import Modal from "@/app/pages/Modal";
 import Image from "next/image";
 
-import App from "@/app/pages/Modal";
-export default function page() {
+export default function Page() {
+  const [showModal, setShowModal] = useState(false);
+
   const companyIndexToShow = 0;
   if (
     companyIndexToShow < 0 ||
@@ -21,14 +25,14 @@ export default function page() {
   return (
     <div>
       <div className="img" style={{ position: "relative" }}>
-        <Page />
+        <Pagem />
         <div
-          className="containers"
+          className=""
           style={{
             position: "absolute",
             top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
+            left: "20%",
+            transform: "translate(-50%,-50%)",
             color: "white",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             padding: "10px",
@@ -51,14 +55,49 @@ export default function page() {
             </p>
             <a href="">Informations utiles</a>
             <div></div>
+            <Icons />
           </div>
         </div>
       </div>
       <div>
+        {" "}
         <ul>
           {menuItems.map((menuItem: any) => (
-            <li key={menuItem.id}> {menuItem.title}</li>
+            <li key={menuItem.id} onClick={() => setShowModal(true)}>
+              {" "}
+              {menuItem.title}
+            </li>
           ))}
+          <div className="modal">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" className="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           {/**  <select className="max-w-xs nav-link"> 
                 {menuItems.map((menuItem:any) => (
                     <option key={menuItem} value={menuItem.title1}> {menuItem.title1}</option>    
@@ -71,15 +110,23 @@ export default function page() {
         {menuItems.map((menuItem: any) => (
           <div key={menuItem.id} className="flex my-2">
             <p className="title">{menuItem.title}</p>
-            {/* <img src={menuItem.image} className="image" /> */}
             <Image
-              width={500}
-              height={300}
               src={menuItem.image}
+              width={300}
+              height={200}
               className="image"
               alt="image"
             />
-            <App />
+            <button
+              onClick={() => setShowModal(true)}
+              className="button type1"
+              type="button"
+            >
+              <span className="btn-txt">Commander</span>
+            </button>
+            {showModal ? (
+              <Modal setShowModal={setShowModal} showModal={showModal} />
+            ) : null}
           </div>
         ))}
       </div>
